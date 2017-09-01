@@ -123,15 +123,11 @@ bool LinkedList<T>::removeBack()
 	if(!isEmpty())
 	{
 		lastNode = m_front;
-		secondintoLast = m_front;
+		
 		while(lastNode != nullptr)
 		{
 			//traverse and check
-			if(lastNode != m_front)
-			{
-				
-				secondintoLast = secondintoLast->getNext();
-			}
+			secondintoLast = lastNode;
 			lastNode = lastNode->getNext();
 
 			if(lastNode == nullptr)
