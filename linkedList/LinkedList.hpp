@@ -52,7 +52,7 @@ bool LinkedList<T>::search(T value) const
 			//finds correct value		
 			if(value == temp->getValue())
 			{
-				isFound == true;
+				isFound = true;
 			}
 			//traverse
 			temp = temp->getNext();
